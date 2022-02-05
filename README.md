@@ -78,7 +78,7 @@ public abstract class Item {//상속관계 전략을 심어줘야한다. (여긴
 
 #### @OneToMany(mappedBy = "FK가 있는 다수에서 선언된 field명") 
        @OneToMany(mappedBy = "car")
-(차(1) ArrayList<Tire> list - 타이어(*) Car car, Member(1) - Order(*) 1 대 다에서 종속을 의미")
+> ( Car car(1)  ----  ArrayList<Tire> list - 타이어(*) , Member(1) - Order(*) 1 대 다에서 종속을 의미")
 
 ```java
 @Entity
